@@ -8673,7 +8673,7 @@
         return color;
     }
     function getLanguageByExtension(extension, languages){
-        let language = "Unknown";
+        let language = extension;
         for(const [key, value] of Object.entries(languages)) {
             if(value.extensions != undefined && value.extensions.includes("." + extension)){
                 language = key;
